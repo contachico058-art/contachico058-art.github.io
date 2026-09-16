@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChicoBet Backups — Informações e privacidade</title>
+  <style>
+    body {
+      margin: 0;
+      background: #101813;
+      color: #edf4ee;
+      font: 17px/1.7 system-ui, sans-serif;
+    }
+    main { max-width: 850px; margin: auto; padding: 40px 24px; }
+    h1, h2 { line-height: 1.2; }
+    h1 { font-size: 38px; }
+    h2 { color: #b7f34b; }
+    a { color: #b7f34b; }
+    nav { display: flex; flex-wrap: wrap; gap: 20px; }
+    section { padding: 28px 0; border-bottom: 1px solid #354638; }
+    .nota { color: #bbc9bd; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>ChicoBet Backups</h1>
+    <p>Ferramenta de uso pessoal do administrador da ChicoBet
+       para guardar cópias de segurança em sua conta Google Drive.</p>
+    <nav aria-label="Navegação">
+      <a href="#sobre">Sobre</a>
+      <a href="#privacidade">Política de Privacidade</a>
+      <a href="#termos">Termos de Uso</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre o aplicativo</h2>
+    <p>O ChicoBet Backups utiliza o rclone na VPS do administrador
+       para transferir arquivos de backup para a pasta
+       ChicoBet-Backups no Google Drive autorizado.</p>
+    <p>A conexão é autorizada pelo titular da conta através do
+       Google. O aplicativo solicita a permissão drive.file,
+       limitada aos arquivos criados ou autorizados para uso
+       pelo aplicativo.</p>
+    <p>O envio automático depende da configuração e do funcionamento
+       das tarefas na VPS. Esta página apresenta a ferramenta;
+       não recebe arquivos de backup nem realiza login.</p>
+  </section>
+
+  <section id="privacidade">
+    <h2>Política de Privacidade</h2>
+    <p class="nota">Atualização: 16 de setembro de 2026.</p>
+
+    <h3>Responsável e contato</h3>
+    <p>A ferramenta é administrada pelo responsável pela ChicoBet.
+       Para dúvidas, acesso ou exclusão de dados, entre em contato:
+       <a href="mailto:contachico058@gmail.com">contachico058@gmail.com</a>.</p>
+
+    <h3>Dados tratados e finalidade</h3>
+    <p>A ferramenta trata os arquivos de backup selecionados pelo
+       administrador e seus metadados, como nome, tamanho e
+       identificador no Drive, para enviar e conferir cópias de
+       segurança e permitir sua recuperação.</p>
+    <p>Os backups podem conter dados das contas da ChicoBet,
+       históricos de operações virtuais, hashes de senhas e
+       configurações confidenciais. Esses arquivos devem permanecer
+       privados e acessíveis somente a pessoas autorizadas.</p>
+
+    <h3>Autorização e armazenamento</h3>
+    <p>A senha da conta Google não é solicitada pelo aplicativo.
+       O rclone armazena na VPS os tokens de autorização necessários
+       para acessar o Drive. As cópias locais ficam na VPS e as
+       cópias enviadas ficam na conta Google Drive autorizada.</p>
+    <p>A permissão drive.file não concede acesso geral a todos os
+       arquivos do Drive. Ela permite gerenciar os arquivos criados
+       ou explicitamente autorizados para este aplicativo.</p>
+
+    <h3>Compartilhamento e uso</h3>
+    <p>Os dados são utilizados para backup e recuperação.
+       Não são vendidos nem utilizados pelo aplicativo para
+       publicidade ou treinamento de modelos de inteligência
+       artificial. O armazenamento envolve os provedores da VPS
+       e do Google Drive, conforme suas respectivas condições.</p>
+    <p>Esta página pública não contém backups, credenciais ou
+       tokens. O GitHub Pages, que a hospeda, pode registrar dados
+       técnicos de acesso conforme sua própria política.</p>
+
+    <h3>Retenção e exclusão</h3>
+    <p>A rotina local mantém os 30 backups completos mais recentes.
+       A exclusão local não implica exclusão no Google Drive.
+       As cópias remotas permanecem até serem excluídas pelo
+       administrador ou por uma regra de retenção configurada.</p>
+    <p>O titular pode revogar a autorização nas
+       <a href="https://myaccount.google.com/connections">conexões da Conta Google</a>.
+       A revogação interrompe novos acessos, mas não apaga as
+       cópias já armazenadas. Para eliminá-las, exclua os arquivos
+       correspondentes na VPS e no Drive, incluindo a lixeira
+       quando desejar a exclusão definitiva.</p>
+  </section>
+
+  <section id="termos">
+    <h2>Termos de Uso</h2>
+    <p class="nota">Atualização: 16 de setembro de 2026.</p>
+    <p>O ChicoBet Backups destina-se ao uso do administrador e de
+       pessoas expressamente autorizadas. Utilize somente contas
+       e dados que você tenha permissão para administrar.</p>
+    <p>O responsável deve proteger suas credenciais, manter espaço
+       disponível e acompanhar o resultado das tarefas.
+       A existência de um arquivo de backup não garante sua
+       restauração: testes periódicos em ambiente separado
+       são necessários.</p>
+    <p>O funcionamento depende da VPS, da conexão com a internet,
+       da autorização Google e dos serviços utilizados.
+       Não há garantia de disponibilidade contínua ou de
+       perda zero de dados.</p>
+    <p>Para encerrar o uso, desative as tarefas de envio, revogue
+       o acesso na Conta Google e decida quais cópias conservar
+       ou excluir.</p>
+    <p>Contato:
+       <a href="mailto:contachico058@gmail.com">contachico058@gmail.com</a>.</p>
+  </section>
+</main>
+</body>
+</html>
